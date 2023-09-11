@@ -15,7 +15,7 @@ export default function HeroSection() {
       w={"full"}
       h={"100vh"}
       backgroundImage={
-        "url(https://images.unsplash.com/photo-1600267175161-cfaa711b4a81?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80)"
+        "url(https://images.pexels.com/photos/189349/pexels-photo-189349.jpeg)"
       }
       backgroundSize={"cover"}
       backgroundPosition={"center center"}
@@ -23,16 +23,17 @@ export default function HeroSection() {
       <VStack
         w={"full"}
         justify={"center"}
+        align={"start"}
         px={useBreakpointValue({ base: 4, md: 8 })}
         bgGradient={"linear(to-r, blackAlpha.600, transparent)"}
       >
-        <Stack maxW={"2xl"} align={"flex-start"} spacing={6}>
+        <Stack maxW={"3xl"} align={"flex-start"} spacing={6}>
           <Heading
             as={"h1"}
             color={"white"}
             fontWeight={700}
             lineHeight={1.2}
-            fontSize={useBreakpointValue({ base: "3xl", md: "4xl" })}
+            fontSize={useBreakpointValue({ base: "3xl", md: "4xl", lg: "6xl" })}
           >
             Una web para tu presente, el futuro para tu empresa
           </Heading>
